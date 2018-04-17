@@ -1,4 +1,6 @@
 public class Main {
+
+    //VM options -Xmx512m -Xms512m
     public static void main(String[] args) throws InterruptedException {
         new Main();
     }

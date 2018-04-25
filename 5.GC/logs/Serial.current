@@ -1,0 +1,21 @@
+Java HotSpot(TM) 64-Bit Server VM (25.161-b12) for windows-amd64 JRE (1.8.0_161-b12), built on Dec 19 2017 17:52:25 by "java_re" with MS VC++ 10.0 (VS2010)
+Memory: 4k page, physical 8287184k(4850232k free), swap 16675792k(12200400k free)
+CommandLine flags: -XX:CMSInitiatingOccupancyFraction=70 -XX:+CMSParallelRemarkEnabled -XX:+CMSScavengeBeforeRemark -XX:GCLogFileSize=1048576 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=./dumps/ -XX:InitialHeapSize=536870912 -XX:+ManagementServer -XX:MaxHeapSize=536870912 -XX:MaxMetaspaceSize=268435456 -XX:NumberOfGCLogFiles=10 -XX:+PrintGC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+ScavengeBeforeFullGC -XX:+UseCMSInitiatingOccupancyOnly -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseGCLogFileRotation -XX:-UseLargePagesIndividualAllocation -XX:+UseSerialGC 
+2018-04-25T19:26:08.543+0300: 3.166: [GC (Allocation Failure) 2018-04-25T19:26:08.543+0300: 3.167: [DefNew: 139658K->17472K(157248K), 0.1864008 secs] 139658K->83954K(506816K), 0.1868457 secs] [Times: user=0.17 sys=0.01, real=0.19 secs] 
+2018-04-25T19:26:11.962+0300: 6.577: [GC (Allocation Failure) 2018-04-25T19:26:11.962+0300: 6.577: [DefNew: 157248K->17472K(157248K), 0.2388967 secs] 223730K->180967K(506816K), 0.2389966 secs] [Times: user=0.17 sys=0.06, real=0.23 secs] 
+2018-04-25T19:26:15.056+0300: 9.670: [GC (Allocation Failure) 2018-04-25T19:26:15.056+0300: 9.670: [DefNew: 157248K->17472K(157248K), 0.2157793 secs] 320743K->278855K(506816K), 0.2158552 secs] [Times: user=0.19 sys=0.03, real=0.22 secs] 
+2018-04-25T19:26:18.474+0300: 13.098: [GC (Allocation Failure) 2018-04-25T19:26:18.474+0300: 13.098: [DefNew: 156058K->156058K(157248K), 0.0000442 secs]2018-04-25T19:26:18.474+0300: 13.098: [Tenured: 261383K->347736K(349568K), 0.8811162 secs] 417441K->375622K(506816K), [Metaspace: 8344K->8344K(1056768K)], 0.8813086 secs] [Times: user=0.78 sys=0.11, real=0.88 secs] 
+2018-04-25T19:26:22.391+0300: 17.008: [Full GC (Allocation Failure) 2018-04-25T19:26:22.391+0300: 17.008: [Tenured: 347736K->347736K(349568K), 0.9776413 secs] 502961K->464927K(506816K), [Metaspace: 8345K->8345K(1056768K)], 0.9777164 secs] [Times: user=0.89 sys=0.08, real=0.97 secs] 
+2018-04-25T19:26:24.463+0300: 19.088: [Full GC (Allocation Failure) 2018-04-25T19:26:24.463+0300: 19.088: [Tenured: 349568K->349568K(349568K), 0.9784700 secs] 506816K->494151K(506816K), [Metaspace: 8345K->8345K(1056768K)], 0.9785485 secs] [Times: user=0.94 sys=0.05, real=0.98 secs] 
+2018-04-25T19:26:25.844+0300: 20.464: [Full GC (Allocation Failure) 2018-04-25T19:26:25.844+0300: 20.464: [Tenured: 349568K->348147K(349568K), 1.1391187 secs] 505557K->502260K(506816K), [Metaspace: 8345K->8345K(1056768K)], 1.1391967 secs] [Times: user=1.08 sys=0.05, real=1.13 secs] 
+2018-04-25T19:26:27.010+0300: 21.625: [Full GC (Allocation Failure) 2018-04-25T19:26:27.010+0300: 21.625: [Tenured: 348294K->348294K(349568K), 0.9930752 secs] 505542K->504604K(506816K), [Metaspace: 8345K->8345K(1056768K)], 0.9931398 secs] [Times: user=0.98 sys=0.00, real=0.99 secs] 
+2018-04-25T19:26:27.997+0300: 22.618: [Full GC (Allocation Failure) 2018-04-25T19:26:27.997+0300: 22.618: [Tenured: 348294K->348169K(349568K), 1.1314575 secs] 504604K->504479K(506816K), [Metaspace: 8345K->8345K(1056768K)], 1.1315373 secs] [Times: user=1.11 sys=0.03, real=1.13 secs] 
+Heap
+ def new generation   total 157248K, used 156328K [0x00000000e0000000, 0x00000000eaaa0000, 0x00000000eaaa0000)
+  eden space 139776K, 100% used [0x00000000e0000000, 0x00000000e8880000, 0x00000000e8880000)
+  from space 17472K,  94% used [0x00000000e9990000, 0x00000000ea9ba200, 0x00000000eaaa0000)
+  to   space 17472K,   0% used [0x00000000e8880000, 0x00000000e8880000, 0x00000000e9990000)
+ tenured generation   total 349568K, used 348169K [0x00000000eaaa0000, 0x0000000100000000, 0x0000000100000000)
+   the space 349568K,  99% used [0x00000000eaaa0000, 0x00000000ffea2730, 0x00000000ffea2800, 0x0000000100000000)
+ Metaspace       used 8348K, capacity 8548K, committed 8832K, reserved 1056768K
+  class space    used 984K, capacity 1053K, committed 1152K, reserved 1048576K

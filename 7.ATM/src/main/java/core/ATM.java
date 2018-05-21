@@ -39,8 +39,6 @@ public class ATM {
                 if (key > valueRemains)
                     continue;
                 int i = (int) (valueRemains / key);
-                if (i == 0)
-                    continue;
                 registerToReturn.add(key, Math.min(i, billMap.get(key)));
                 valueRemains = value - registerToReturn.getTotal();
                 if (valueRemains <  1)

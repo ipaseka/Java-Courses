@@ -7,13 +7,17 @@ import java.util.TreeSet;
 
 public class ATM {
     private CashRegister mainRegister = new CashRegister();
-
+    private CashRegister initStateRegister = new CashRegister();
     public void registerCash(int value, int count) {
         mainRegister.add(value, count);
     }
 
     public void registerCash(int value) {
         mainRegister.add(value);
+    }
+
+    public long getTotal(){
+        return mainRegister.getTotal();
     }
 
     @Override
@@ -49,5 +53,11 @@ public class ATM {
         }
         mainRegister.remove(registerToReturn);
         return registerToReturn;
+    }
+    public void flush() {
+        initStateRegister = new CashRegister(mainRegister);
+    }
+    public void restore() {
+        mainRegister = new CashRegister(initStateRegister);
     }
 }
